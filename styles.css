@@ -83,7 +83,7 @@ body.dark-mode {
   z-index: 9999;
   pointer-events: none;
   transform: translate(-50%, -50%);
-  transition: width 0.2s ease, height 0.2s ease;
+  transition: width 0.2s ease, height 0.2s ease, background-color 1s, color 1s;
   mix-blend-mode: difference;
 
   display: flex;
@@ -94,9 +94,8 @@ body.dark-mode {
   font-weight: bold;
   opacity: 1;
   visibility: visible;
-  transition: background-color 1s, color 1s;
 }
-* {
+*{
   cursor: none !important;
 }
 .custom-cursor .cursor-text {
@@ -104,9 +103,8 @@ body.dark-mode {
   opacity: 0;
   color: #0f0f0f;
   text-shadow: none;
-  transition: opacity 0.2s ease;
+  transition: opacity 0.2s ease, background-color 1s, color 1s;
   mix-blend-mode: normal;
-  transition: background-color 1s, color 1s;
 }
 .custom-cursor.big {
   width: 90px;
@@ -119,11 +117,11 @@ body.dark-mode {
 body.dark-mode .custom-cursor {
   color: #ffeeee;
   border-color: #ffeeee;
-  transition: background-color 1s, color 1s;
+  transition: width 0.2s ease, height 0.2s ease, background-color 1s, color 1s;
 }
 body.dark-mode .custom-cursor .cursor-text {
   color: #0f0f0f;
-  transition: background-color 1s, color 1s;
+  transition: opacity 0.2s ease, background-color 1s, color 1s;
 }
 
 .button {
@@ -140,12 +138,11 @@ body.dark-mode .custom-cursor .cursor-text {
   border: none;
   text-decoration: none;
   gap: 6px;
-  transition: width 0.3s ease, padding 0.3s ease;
+  transition: width 0.3s ease, padding 0.3s ease, background-color 0.3s ease, color 0.3s ease;
   width: 120px;
   min-width: 120px;
   cursor: pointer;
   overflow: hidden;
-  transition: background-color 1s, color 1s;
 }
 .button:hover {
   width: 150px;
@@ -159,7 +156,7 @@ body.dark-mode .custom-cursor .cursor-text {
 body.dark-mode .button {
   background-color: #ffeeee;
   color: #0f0f0f;
-  transition: background-color 1s, color 1s;
+  transition: width 0.3s ease, padding 0.3s ease, background-color 0.3s ease, color 0.3s ease;
 }
 
 .dark-toggle {
@@ -174,7 +171,7 @@ body.dark-mode .button {
   color: #ffeeee;
   font-size: 24px;
   cursor: pointer;
-  z-index: 10000;
+  z-index: 9998;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -229,14 +226,14 @@ body.dark-mode .dark-toggle {
   text-align: left;
   width: 100%;
   height: 90%;
-  margin-bottom: 3rem;
-  /* padding-top: 2rem; */
-  /* padding-bottom: 2rem; */
+  margin-top: 3rem;
+  margin-bottom: 4rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
   background-color: #0f0f0f;
   border-radius: 15px;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-  transition: transform 0.5s ease, opacity 0.5s ease;
-  transition: background-color 1s, color 1s;
+  transition: transform 0.5s ease, opacity 0.5s ease, background-color 1s, color 1s;
 }
 .card.hidden {
   transform: translateY(50px);
@@ -248,12 +245,12 @@ body.dark-mode .dark-toggle {
 }
 body.dark-mode .card {
   background-color: #ffeeee;
-  transition: background-color 1s, color 1s;
+  transition: transform 0.5s ease, opacity 0.5s ease, background-color 1s, color 1s;
 }
 
 .margin-aja {
-  margin-top: 100px;
-  margin-bottom: 100px;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
 .layout-wrapper {
@@ -293,12 +290,12 @@ body.dark-mode .left-sticky {
   color: white;
   transition: background-color 1s, color 1s;
 }
+.scroll-content::-webkit-scrollbar {
+  display: none;
+}
 body.dark-mode .scroll-content {
   color: black;
   transition: background-color 1s, color 1s;
-}
-.scroll-content::-webkit-scrollbar {
-  display: none;
 }
 
 .right-scroll {
@@ -312,11 +309,10 @@ body.dark-mode .scroll-content {
   margin-bottom: 2rem;
   transition: background-color 1s, color 1s;
 }
+.right-scroll::-webkit-scrollbar {
+  display: none;
+}
 body.dark-mode .right-scroll {
   color: #0f0f0f;
   transition: background-color 1s, color 1s;
-
-}
-.right-scroll::-webkit-scrollbar {
-  display: none;
 }
