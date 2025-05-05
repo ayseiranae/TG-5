@@ -83,7 +83,7 @@ body.dark-mode {
   z-index: 9999;
   pointer-events: none;
   transform: translate(-50%, -50%);
-  transition: width 0.2s ease, height 0.2s ease, background-color 1s, color 1s;
+  transition: all 0.2s ease, background-color 1s, color 1s;
   mix-blend-mode: difference;
 
   display: flex;
@@ -117,7 +117,7 @@ body.dark-mode {
 body.dark-mode .custom-cursor {
   color: #ffeeee;
   border-color: #ffeeee;
-  transition: width 0.2s ease, height 0.2s ease, background-color 1s, color 1s;
+  transition: all 0.2s ease, background-color 1s, color 1s;
 }
 body.dark-mode .custom-cursor .cursor-text {
   color: #0f0f0f;
