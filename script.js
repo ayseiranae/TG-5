@@ -11,7 +11,6 @@ toggleBtn.addEventListener('click', function () {
   }
 });
 
-
 const cursor = document.querySelector(".custom-cursor");
 const cursorText = document.querySelector(".cursor-text");
 
